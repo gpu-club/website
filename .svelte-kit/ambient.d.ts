@@ -34,11 +34,9 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const PYENV_SHELL: string;
 	export const npm_config_cache: string;
-	export const npm_package_dev_optional: string;
 	export const HISTCONTROL: string;
 	export const XDG_MENU_PREFIX: string;
 	export const ZSH_CACHE_DIR: string;
-	export const npm_package_integrity: string;
 	export const HOSTNAME: string;
 	export const HISTSIZE: string;
 	export const _P9K_TTY: string;
@@ -57,7 +55,6 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_DESKTOP: string;
 	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
-	export const npm_package_dev: string;
 	export const npm_config_init_module: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const _: string;
@@ -67,14 +64,12 @@ declare module '$env/static/private' {
 	export const GDM_LANG: string;
 	export const HOME: string;
 	export const USERNAME: string;
-	export const npm_package_peer: string;
 	export const LANG: string;
 	export const LS_COLORS: string;
 	export const XDG_CURRENT_DESKTOP: string;
 	export const npm_package_version: string;
 	export const MEMORY_PRESSURE_WATCH: string;
 	export const WAYLAND_DISPLAY: string;
-	export const npm_package_resolved: string;
 	export const INVOCATION_ID: string;
 	export const MANAGERPID: string;
 	export const INIT_CWD: string;
@@ -84,7 +79,6 @@ declare module '$env/static/private' {
 	export const GJS_DEBUG_OUTPUT: string;
 	export const MOZ_GMP_PATH: string;
 	export const GNOME_SETUP_DISPLAY: string;
-	export const npm_package_optional: string;
 	export const npm_config_npm_version: string;
 	export const ZPFX: string;
 	export const XDG_SESSION_CLASS: string;
@@ -122,7 +116,7 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const OLDPWD: string;
-	export const npm_package_engines_node: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -162,11 +156,9 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		PYENV_SHELL: string;
 		npm_config_cache: string;
-		npm_package_dev_optional: string;
 		HISTCONTROL: string;
 		XDG_MENU_PREFIX: string;
 		ZSH_CACHE_DIR: string;
-		npm_package_integrity: string;
 		HOSTNAME: string;
 		HISTSIZE: string;
 		_P9K_TTY: string;
@@ -185,7 +177,6 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_DESKTOP: string;
 		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
-		npm_package_dev: string;
 		npm_config_init_module: string;
 		SYSTEMD_EXEC_PID: string;
 		_: string;
@@ -195,14 +186,12 @@ declare module '$env/dynamic/private' {
 		GDM_LANG: string;
 		HOME: string;
 		USERNAME: string;
-		npm_package_peer: string;
 		LANG: string;
 		LS_COLORS: string;
 		XDG_CURRENT_DESKTOP: string;
 		npm_package_version: string;
 		MEMORY_PRESSURE_WATCH: string;
 		WAYLAND_DISPLAY: string;
-		npm_package_resolved: string;
 		INVOCATION_ID: string;
 		MANAGERPID: string;
 		INIT_CWD: string;
@@ -212,7 +201,6 @@ declare module '$env/dynamic/private' {
 		GJS_DEBUG_OUTPUT: string;
 		MOZ_GMP_PATH: string;
 		GNOME_SETUP_DISPLAY: string;
-		npm_package_optional: string;
 		npm_config_npm_version: string;
 		ZPFX: string;
 		XDG_SESSION_CLASS: string;
@@ -250,7 +238,7 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
 		OLDPWD: string;
-		npm_package_engines_node: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
