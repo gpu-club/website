@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'JB-NerdFonts';
+    src: url('../static/fonts/JetBrainsMonoNerdFont-Bold.ttf');
+}
