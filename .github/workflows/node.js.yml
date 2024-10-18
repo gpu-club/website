@@ -26,10 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: './website/package-lock.json'
+        cache-dependency-path: './package-lock.json'
     - name: website installing
-      working-directory: ./website
+      working-directory: .
       run: npm i 
     - name: build
-      working-directory: ./website
+      working-directory: .
       run: npm run build
