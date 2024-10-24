@@ -156,37 +156,37 @@
     <h2 class="text-4xl font-semibold mb-6">Meet Our Team</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="team-card text-green">
-      <img src="/src/imgs/akshat.png" alt="Akshat Mangudi" class="team-image" />
+      <img src="imgs/akshat.png" alt="Akshat Mangudi" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Akshat Mangudi</h3>
         <p>President</p>
         <p>Driving the vision and growth of the GPUG Club.</p>
       </div>
       <div class="team-card text-green">
-      <img src="/src/imgs/kaviraj.png" alt="Kaviraj" class="team-image" />
+      <img src="imgs/kaviraj.png" alt="Kaviraj" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Kaviraj</h3>
         <p>Secretary</p>
         <p>Leading club and executing activites.</p>
       </div>
       <div class="team-card text-green">
-      <img src="/src/imgs/bhargav.png" alt="Bhargav" class="team-image" />
+      <img src="imgs/bhargav.png" alt="Bhargav" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Bhargav Gembali</h3>
         <p>Technical team lead</p>
         <p>Overseeing technical projects and innovation.</p>
       </div>
       <div class="team-card text-green">
-      <img src="Arya.jpg" alt="Arya" class="team-image" />
+      <img src="imags/Arya.jpg" alt="Arya" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Arya Komukula</h3>
         <p>Creative team lead</p>
         <p>Driving the vision and growth of the GPUG Club.</p>
       </div>
       <div class="team-card text-green">
-      <img src="jones.jpg" alt="Jones" class="team-image" />
+      <img src="imgs/jones.jpg" alt="Jones" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Jones</h3>
         <p>Event Management Lead</p>
         <p>Leading club and executing activites.</p>
       </div>
       <div class="team-card text-green">
-      <img src="yashaswini.jpg" alt="yashaswini" class="team-image" />
+      <img src="imgs/yashaswini" alt="yashaswini" class="team-image" />
         <h3 class="text-2xl font-bold mb-2">Yashaswini</h3>
         <p>Outreach</p>
         <p>Overseeing technical projects and innovation.</p>
