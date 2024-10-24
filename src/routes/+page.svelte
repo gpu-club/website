@@ -37,18 +37,31 @@
   const handleGPUGHover = (isHovering) => {
     isHoveringGPUG = isHovering;
   };
+
+  // Smooth scrolling function
+  const smoothScroll = (target) => {
+    const element = document.querySelector(target);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 </script>
 
 <!-- Header -->
 <header class="bg-dark py-6">
   <div class="container mx-auto flex justify-between items-center px-4">
-    <h1 class="text-3xl sm:text-4xl font-bold">GPUG Club</h1>
+    <div class="highlight">
+      <a href="#home" class="text-3xl sm:text-4xl font-bold">GPUG Club</a>
+    </div>
     <nav>
       <ul class="hidden sm:flex space-x-6">
-        <li><a href="#events" class="hover-green">Events</a></li>
-        <li><a href="#team" class="hover-green">Team</a></li>
-        <li><a href="#gallery" class="hover-green">Gallery</a></li>
-        <li><a href="#contact" class="hover-green">Contact</a></li>
+        <li><a href="#events" on:click={(event) => { event.preventDefault(); smoothScroll('#events'); }} class="hover-green">Events</a></li>
+        <li><a href="#team" on:click={(event) => { event.preventDefault(); smoothScroll('#team'); }} class="hover-green">Team</a></li>
+        <li><a href="#gallery" on:click={(event) => { event.preventDefault(); smoothScroll('#gallery'); }} class="hover-green">Gallery</a></li>
+        <li><a href="#contact" on:click={(event) => { event.preventDefault(); smoothScroll('#contact'); }} class="hover-green">Contact</a></li>
       </ul>
       <div class="sm:hidden">
         <button on:click={toggleMenu} class="text-green focus:outline-none">
@@ -74,14 +87,15 @@
   {#if mobileMenuOpen}
     <div class="sm:hidden bg-dark">
       <ul class="space-y-4 py-4 px-6">
-        <li><a href="#events" class="hover-green">Events</a></li>
-        <li><a href="#team" class="hover-green">Team</a></li>
-        <li><a href="#gallery" class="hover-green">Gallery</a></li>
-        <li><a href="#contact" class="hover-green">Contact</a></li>
+        <li><a href="#events" on:click={(event) => { event.preventDefault(); smoothScroll('#events'); }} class="hover-green">Events</a></li>
+        <li><a href="#team" on:click={(event) => { event.preventDefault(); smoothScroll('#team'); }} class="hover-green">Team</a></li>
+        <li><a href="#gallery" on:click={(event) => { event.preventDefault(); smoothScroll('#gallery'); }} class="hover-green">Gallery</a></li>
+        <li><a href="#contact" on:click={(event) => { event.preventDefault(); smoothScroll('#contact'); }} class="hover-green">Contact</a></li>
       </ul>
     </div>
   {/if}
 </header>
+
 
 <!-- Main Content -->
 <main
@@ -90,7 +104,7 @@
 >
   <!-- Circle that follows the mouse -->
 
-  <section class="home-section">
+  <section id="home" class="home-section">
     <h2 class="text-6xl mb-4">
       Welcome to
       <span
@@ -217,14 +231,16 @@
         <textarea
           id="message"
           class="w-full p-2 bg-medd rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+          rows="5"
         ></textarea>
       </div>
       <button
         type="button"
         on:click={sendMessage}
-        class="px-6 py-2  bg-green-400 text-black rounded-md"
-        >Send Message</button
+        class="py-2 px-4 bg-green-900 hover:bg-green-light text-white rounded-md"
       >
+        Send Message
+      </button>
     </form>
   </section>
 </main>
@@ -266,6 +282,7 @@
 
   section {
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,6 +338,13 @@
     scale:1.5;
   }
 
+  .highlight{
+    background-color: #76ff03;
+    color:black;
+    border-radius: 20px;
+    padding: 0px 5px;
+  }
+
   /* Header styles */
   header {
     position: fixed;
@@ -372,5 +396,9 @@
     border-radius: 5px;
     z-index: 1000;
     transition: opacity 0.5s ease;
+  }
+
+  #team{
+    min-width: 100%;
   }
 </style>
